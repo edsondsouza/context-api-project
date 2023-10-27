@@ -10,4 +10,4 @@ function Profile() {
   return <div>Welcome {data.username}</div>
 }
 
-export default Profile
+export default Profile;

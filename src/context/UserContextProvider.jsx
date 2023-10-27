@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import UserContext from './UserContext'
 
 const UserContextProvider = ({children}) => {
   // state for passing the data
-  const [data, setData] = React.useState(null)
+  const [data, setData] = useState(null);
+
   return(
-  <UserContext.Provider value={{data, setData}}>
-    {children}
-  </UserContext.Provider>
+    <UserContext.Provider value={{data, setData}}>
+      {children}
+    </UserContext.Provider>
   )
 }
 
